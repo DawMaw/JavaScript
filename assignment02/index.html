@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 02 assignment</title>
+    </head>
+    <body>
+        <h1>The <span id="totalStaff">X </span> Great Teachers of ME Computer Centre</h1>
+        <ol>
+            <li id="liStaff1"></li>
+            <li id="liStaff2"></li>
+            <li id="liStaff3"></li>
+            <li id="liStaff4"></li>
+            <li id="liStaff5"></li>
+        </ol>
+        <div id="divMessage"></div>
+        <script>
+            "use strict";
+
+            var elLiStaff1 = document.getElementById("liStaff1"),
+                elLiStaff2 = document.getElementById("liStaff2"),
+                elLiStaff3 = document.getElementById("liStaff3"),
+                elLiStaff4 = document.getElementById("liStaff4"),
+                elLiStaff5 = document.getElementById("liStaff5");
+
+            var elDivMessage = document.getElementById("divMessage"),
+                elTotalStaff = document.getElementById("totalStaff");
+
+            var staffName = [
+                "Daw Maw",
+                "Daw Ei Phyo Thein",
+                "Daw Cho Latt Thinn",
+                "Daw Si Si Sein",
+                "Daw Myint Myint San",
+            ],
+                staffAge = [49, 34, 37, 38, 40],
+                totalStaffAge = (staffAge[0] + staffAge[1] + staffAge[2] + staffAge[3] + staffAge[4])/5;
+
+            console.log(staffName);
+            console.log(staffAge);
+            console.log(totalStaffAge);
+
+            elLiStaff1.textContent = staffName[0]  + " " + staffAge[0] + " years old.";
+            elLiStaff2.textContent = staffName[1]  + " " + staffAge[1] + " years old.";
+            elLiStaff3.textContent = staffName[2]  + " " + staffAge[2] + " years old.";
+            elLiStaff4.textContent = staffName[3]  + " " + staffAge[3] + " years old.";
+            elLiStaff5.textContent = staffName[4]  + " " + staffAge[4] + " years old.";
+
+            elDivMessage.textContent = "The age of teacher in ME Computer is " + totalStaffAge.toFixed(0) + " yrears.";
+            elTotalStaff.textContent = staffName.length;
+        </script>
+    </body>
+    <!--
+        Name:           Daw Maw
+        Email:
+        Project:        Chapter 02
+        Description:    Look at JS instuctions
+        Date:           June 21, 2019
+    -->
+</html>
