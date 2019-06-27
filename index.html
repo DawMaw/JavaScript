@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 01 Practice</title>
+    </head>
+    <bod>
+        <h1>JavaScript Objects</h1>
+        <script>
+            
+            // This is Anonimus function, so that invoke inmediate
+            // This is IIFE
+            (function(){
+                "use strict";
+                /* This is a multi-line comment.
+                We created a "school" Object, and added Properties. */
+                var school = {
+                    "schoolName": "ME Computer",
+                    "city": "Mandalay",
+                    "country": "Myanmar",
+                    "phone": "09-441008793",
+                };
+            
+                
+                
+                // output the Object to the console
+                console.log(school);
+
+                /*
+                JavaScript (often) uses Methods on Objects.
+                Below, we used the .write() Method to output
+                the value of the lastName Property of the school Object
+                to the document Object (the Viewport)
+                */
+
+                document.write("Welcome ")
+                document.write(school.schoolName + "<br />");
+                document.write("Address is " +school.city + ' ' + school.country + "<br />");
+                document.write('Our phone number is ' + school.phone + "<br />");
+
+                document.write("<br />")
+                document.write("Our centre is great")
+            }());
+        </script>
+    </body>
+    <!--
+        Name:           daw maw
+        Email:
+        Project:        Chapter 01
+        Description:    Look at JS Objects
+        Date:           June 20, 2019
+    -->
+</html>
