@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 03 Assignment</title>
+</head>
+<body>
+    <h1>A CourseList from ME Computer</h1>
+    <div id="showCourseList"></div>
+    <script>
+        (function(){
+            "use strict";
+
+            // Construct Notation for creating Object with 4 parameters
+            function Courses(courseName, group, year, genre) {
+                // Properties
+                this.courseName  = courseName;
+                this.group      = group;
+                this.year       = year;
+                this.genre      = genre;
+
+                // Methods
+                this.released = function() {
+                    var currentYear = new Date();
+                    var yearOffset  = currentYear.getFullYear() - this.year;
+                    return yearOffset;
+                }
+            } // End of Album() Object
+
+            // Instantiated 4 new Albums, based on the Album Object.
+            var course1 = new Courses("Python Programming", "Software", 2017, "Language"),
+                course2 = new Courses("Computation and Programming", "Software", 2017, "Problem solving"),
+                course3 = new Courses("Git and GitHub", "Software", 2018, "Publish"),
+                course4 = new Courses("CompTIA A+ 220-902", "Hardware", 2018, "System Admin"),
+                course5 = new Courses("Linux Fundamental", "Software", 2018, "Open Source OS");
+
+            // Console output of various Objects/Properties/Methods
+            console.log(course1.group);
+            console.log(course1.released());
+            console.log(course3.genre);
+
+            // Storing each of the separate Objects, in an Array
+            var courseCollection = [course1, course2, course3, course4, course5];
+
+            console.log(courseCollection[1].group);
+
+            /*Create a random nunmber, up to the maximum of the Length of the Array, and round it down, always.*/
+            var randomCourse = Math.floor(Math.random() * courseCollection.length);
+            console.log(randomCourse);
+
+            // Create a JS Object based on the HTML Node, above
+            var elShowCourse = document.getElementById("showCourseList");
+
+            // Display only text content in the HTML Node
+            //elShowAlbum.innerHTML = "<h2>Hello</h2>";
+
+            // Create Message to display
+            var msg = "The Course <em>" + courseCollection[randomCourse].courseName
+            + "</em> by " + courseCollection[randomCourse].group 
+            + " was published in " + courseCollection[randomCourse].year 
+            + " ( " + courseCollection[randomCourse].released() + " years ago)."
+            + "<br />The genre was " + courseCollection[randomCourse].genre + ".";
+            
+            // In the HTML Node, display a random Album's Property
+            elShowCourse.innerHTML = msg;
+        }());
+    </script>
+</body>
+<!-- 
+    Name:           Daw Maw
+    Email:          dawmaw.megroup@gmail.com
+    Project:        Chapter 03 Assignment
+    Description:    Look at Functions, Methods & Objects
+    Date:           July 09, 2019
+ -->
+</html>
