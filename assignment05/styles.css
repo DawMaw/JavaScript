@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font: 200 2.5em sans-serif;
+    color: rgba(0,0,0,.5);
+    text-transform: uppercase;
+    letter-spacing: .25em;
+}
+
+button {
+    box-shadow: 2px 2px 150px 2px black;
+    font: 150 1.5em sans-serif;
+    color: green;
+}
+
+#divShowFight {
+    width: 100%;
+}
+
+#divLeftCol {
+    background-color: blue;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+#divRightCol {
+    background-color: red;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+#divCenterCol {  
+    background-color: hotpink;   
+    width: 100%;
+    clear: both;
+}
+
+.fightTie {
+    color: yellow;
+    padding: 1em;
+}
+
+.fightWin {
+    color: blue;
+    padding: 1em;    
+}
+
+.fightLose {
+    color: red;
+    padding: 1em;
+}
+
+.textAlign {
+    text-align: left;  
+}
+
+.imageHeight {
+    height: 360px;
+}
