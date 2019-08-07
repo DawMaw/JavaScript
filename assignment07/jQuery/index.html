@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 07 jQuery</title>
+        <style>
+            fieldset { width: 10em; }
+        </style>
+    </head>
+    <body>
+        <h1>Star Wars Droid Name Generator</h1>
+        <form id="swForm">
+            <fieldset>
+                <legend>About You</legend>
+                <label for="inFirst">First Name: </label>
+                <input type="text" placeholder="George" name="inFirst" id="inFirst"><br>
+                <label for="inLast">Last Name: </label>
+                <input type="text" placeholder="Lucas" name="inLast" id="inLast"><br>
+                <label for="inDOB">Birthday: </label>
+                <input type="date" name="inDOB" id="inDOB"><br>
+            </fieldset>
+            <p>
+                <input type="button" value="Go" id="btnGo">
+                <input type="button" value="Clear" id="btnClear">
+            </p>
+        </form>
+        <div id="divShow">
+            <div id="divYou">&nbsp;</div>
+            <div id="divDroid">&nbsp;</div>
+            <div id="divType">&nbsp;</div>
+            <div><img src="" id="droidPic"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+    <!-- 
+        Name:           Daw Maw
+        Email:          dawmaw.megroup@gmial.com
+        Project:        Chapter 07
+        Description:    Look at jQuery
+        Date:           August 3, 2019
+    -->
+</html>

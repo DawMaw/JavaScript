@@ -1,0 +1,14 @@
+jQuery IIFE
+===========
+$(function(){
+    jQuery IIFE does not need to closing ()
+});
+
+Creating Variables via jQuery
+- Common practice to use a $ in front of the Variable name
+- If you create a jQuery-based Variable, you must then use jQuery Methods on it
+- If you create a Plain Vanilla JavaScript Variable, you must then use PVJS Methods on it 
+
+For examples:
+- myDiv.innerHTML = "<h1>Hello</h1>";      - PVJS
+- $myDiv.html("<h1>Hello</h1>");           - JQuery

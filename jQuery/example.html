@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery - Example</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">Product List</h1>
+      <h2>Sale Product List<span id="counter"></span></h2>
+      <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemDescription" placeholder="Add description" />
+        <input type="submit" id="add" value="add" />
+      </form>
+      <ul>
+        <li id="one" class="hot"><em>Branded </em>Desktop & PC</li>
+        <li id="two" class="hot">Monitor</li>
+        <li id="three" class="hot">Speaker</li>
+        <li id="four" class="hot">Printer</li>
+        <li id="five">Keyboard and Mouse</li>
+      </ul>
+      <p id="message">click to select item & click to remove item</p>
+      <p id="footer">&copy; ME Computer</p>
+    </div>
+    <script src="references/jquery-1.12.4.min.js"></script>
+    <script src="js/example.js"></script>
+  </body>
+</html>
