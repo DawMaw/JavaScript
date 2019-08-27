@@ -1,0 +1,70 @@
+{
+    "allChars": [
+        {
+            "name": "The Thing",
+            "graphic": "thing.png",
+            "origin": "Cosmic ray accident.",
+            "powers": [
+                {
+                    "p1": "Superhuman strength",
+                    "p2": "Rock-like skin"
+                }
+            ]
+        },
+        {
+            "name": "Invisible woman",
+            "graphic": "invisiblewoman.png",
+            "origin": "Cosmic ray accident.",
+            "powers": [
+                {
+                    "p1": "Invisibility",
+                    "p2": "Force Fields"
+                }
+            ]
+        },
+        {
+            "name": "Venom",
+            "graphic": "venom.png",
+            "origin": "Bonded with alien symbiote.",
+            "powers": [
+                {
+                    "p1": "Camouflage",
+                    "p2": "Undetectable by Spider-Man"
+                }
+            ]
+        },
+        {
+            "name": "Kingpin",
+            "graphic": "kingpin.png",
+            "origin": "Overweight crime king.",
+            "powers": [
+                {
+                    "p1": "Genius-level intellect",
+                    "p2": "Master tactician"
+                }
+            ]
+        },
+        {
+            "name": "Magneto",
+            "graphic": "magneto.png",
+            "origin": "Mutant with magnetic ability",
+            "powers": [
+                {
+                    "p1": "Magnetism",
+                    "p2": "Flight"
+                }
+            ]
+        },
+        {
+            "name": "Black Cat",
+            "graphic": "blackcat.png",
+            "origin": "Thief with bad luck powers",
+            "powers": [
+                {
+                    "p1": "Probability manipulation",
+                    "p2": "Excellent Street Fighter"
+                }
+            ]
+        }
+    ]
+}
